@@ -1,0 +1,132 @@
+
+div.hr{
+	width:70%;
+	height:2px;
+	margin:10px auto;
+	background-color:#18612A;
+	clear:both;
+}
+div#wrapper {
+	background-image:none !important;
+}
+
+label{
+	display:block;
+	margin-top:10px;
+}
+input{
+	width:90%;
+	display:block;
+	margin:0;
+	padding:0;
+}
+input.file{
+	width:auto;
+}
+input.Submit{
+	width:45%;
+	display:inline;
+	margin:10px auto;
+}
+
+/**********************************/
+/**********  TinyMCE  *************/
+/**********************************/
+
+form.cms {
+	width:97%;
+	margin:10px; auto;
+}
+
+form.cms iframe,
+form.cms textarea{
+	width:100%;
+	height:300px;
+}
+
+		
+/**********************************/
+/*********  Loggin Page  **********/
+/**********************************/
+
+
+form.cmsLogin {
+	text-align:right;
+	padding:50px 0;
+}
+.cmsLogin input,
+.cmsLogin label{
+	margin:0;
+	padding:0;
+}
+.cmsLogin input{
+	background-color:#EEE;
+}
+.cmsLogin label{
+	display:block;
+	width:410px;
+	margin:0 auto;
+	margin-bottom:3px;
+	clear:left;
+}
+.cmsLogin label span{
+	float:left;
+}
+.cmsLogin input.submit{
+	display:block;
+	margin:0 auto 5px auto;
+}
+.cmsLogin div{
+	padding:50px 0;
+}
+		
+/**********************************/
+/*********  default_aspx  *********/
+/**********************************/
+
+body#default_aspx div.square{
+	height:1000px;
+}
+body#default_aspx div.slide1,
+body#default_aspx div.slide2{
+	height:500px;
+	width:300px;
+}
+
+/**********************************/
+/*********  courses_aspx  *********/
+/**********************************/
+
+#courses_aspx a.mce_save{
+	display:none;
+}
+
+/**********************************/
+/*********  gallery_aspx  *********/
+/**********************************/
+
+#gallery_aspx img.cmsGalleryImage{
+	width:100px;
+	float:left;
+	padding:5px;
+}
+#gallery_aspx form div{
+	margin-left:120px;
+}
+#gallery_aspx h6{
+	clear:both;
+	text-align:center;
+	background:#18612A;
+	color:White;
+}
+#gallery_aspx input{
+	width:50%;
+}
+#gallery_aspx input.file{
+	margin-top:10px;
+	width:auto;
+}
+#gallery_aspx input.Submit{
+	width:auto;
+}
+

@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    
+    <title>Woodland Life</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/favicon"/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords"
+		 content="woodland life" />
+	<meta name="description"
+		 content="The Business of Bushcraft Survival, Traditional Woodland Crafts and Sustainably Living Off The Land" />
+         
+    <link rel="stylesheet" type="text/css"  href="../Style/canvas.css" />
+    <link rel="stylesheet" type="text/css"  href="../Style/master.css" />
+    <link rel="stylesheet" type="text/css"  href="../Style/page.css" />
+    <!--[if lt IE 7]>
+    	<link rel="stylesheet" type="text/css" href="../Style/ie6.css" />
+    <![endif]-->
+
+	<asp:ContentPlaceHolder id="head_content" runat="server" />
+
+</head>
+<body id="<%= System.IO.Path.GetFileName(Request.PhysicalPath).Replace(".","_").ToLower() %>" class="no-js">
+    <form runat="server" ID="aspnetForm" class="wrapper">
+	    <asp:ContentPlaceHolder id="main_content" runat="server" />
+	    <asp:ContentPlaceHolder id="footer_content" runat="server" />
+		<p class="cb legal">&copy; <%= DateTime.Now.Year.ToString() %> WoodlandLife<br />Social Enterprise Company No: 07648799</p>
+	</form>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/core.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    
+</body>
+</html>

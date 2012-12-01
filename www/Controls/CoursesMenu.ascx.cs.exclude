@@ -1,0 +1,53 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class Controls_CoursesMenu : System.Web.UI.UserControl
+{
+    public enum LocationType { None, OffSite, OnSite, Partial }
+
+    public class CourseItem
+    {
+        public string Name { get; set; }
+        public string Length { get; set; }
+        public LocationType Location { get; set; }
+
+        public CourseItem(string name, int length, LocationType location)
+        {
+            this.Name = name;
+            this.Length = length + " days";
+            this.Location = location;
+        }
+    }
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!Page.IsPostBack)
+        {
+            List<CourseItem> RuralCrafts = new List<CourseItem>();
+            RuralCrafts.Add(new CourseItem("Green Woodworking", 1, LocationType.None));
+            RuralCrafts.Add(new CourseItem("Tool Care and Maintenance", 1, LocationType.None));
+            RuralCrafts.Add(new CourseItem("Tree Felling", 2, LocationType.None));
+            RuralCrafts.Add(new CourseItem("Coppicing", 2, LocationType.Partial));
+            RuralCrafts.Add(new CourseItem("Hedgelaying", 2, LocationType.Partial));
+
+            List<CourseItem> BushCrafts = new List<CourseItem>();
+            BushCrafts.Add(new CourseItem("Campcraft Beginner", 1, LocationType.None));
+            BushCrafts.Add(new CourseItem("Campcraft Expert", 2, LocationType.Partial));
+
+            List<CourseItem> OutdoorLeisure = new List<CourseItem>();
+            OutdoorLeisure.Add(new CourseItem("Search & Rescue", 1, LocationType.OnSite));
+            OutdoorLeisure.Add(new CourseItem("Navigation Games", 2, LocationType.OnSite));
+
+            this.RuralCrafts.DataSource = RuralCrafts;
+            this.BushCrafts.DataSource = BushCrafts;
+            this.OutdoorLeisure.DataSource = OutdoorLeisure;
+            
+            this.RuralCrafts.DataBind();
+            this.BushCrafts.DataBind();
+            this.OutdoorLeisure.DataBind();
+        }
+    }
+}

@@ -1,0 +1,15 @@
+﻿
+/* Standard blank layout: */
+html, html body, ul, li, img { border:0; padding:0; margin:0; } 
+body { font-family:arial; }
+.cb { clear:both !important; float:none !important; display:block !important; }
+a { text-decoration:none;  border:0; outline:0; }
+.wrapper { min-width:1024px; }
+ul, li { list-style:none; display:block; } 
+
+
+/* Forms: */
+.form em {
+    color:Red;
+    font-style:inherit;
+}

@@ -1,0 +1,108 @@
+/*****************************/
+/*** Just for master page: ***/
+/*****************************/
+
+
+body { color:#222; background:#E2E2E2; }
+div#main{ padding:5px 10px 0 10px; margin:0 auto; min-height:300px; max-width:1100px; clear:both; }
+
+/* Banner: */
+div#banner {
+    margin:0;padding:0;
+    background:url(../images/bg/fog.jpg) no-repeat top right white;
+    border-bottom:3px solid #18612A;
+    height:99px;
+}
+div#banner a{
+    float:left;
+    width:156px;
+}
+div#banner h2{
+    margin:0;padding:0;
+    font-size: 14px;
+    padding-top:80px;
+    text-align:center;
+}
+div#banner h2 span{
+    position:relative;
+    right:95px;
+    z-index:100;
+}
+
+
+/* Footer: */
+div.footer { text-align:center; background:url('../images/Footer/FooterStripe.jpg') repeat-x; margin-top:20px; }
+div.footer a { float:right; display:block; width:112px; margin-right:20px; }
+
+/* legal */
+p.legal { text-align:right; color:#888; padding:0 10px; margin:0;}
+
+
+            
+   
+/*****************************/
+/*       Navigation:         */
+/*****************************/
+
+ul.nav.flow { width:960px; margin:0 auto; border:1px solid transparent;  }
+ul.nav.flow li { float:left; background:no-repeat top left;  }
+ul.nav.flow li span { background:url(../images/nav/pipe.gif) no-repeat center right;  }
+ul.nav.flow li span a { text-indent:-10000px; margin-right:6px;  }
+
+/* Set everything to the same height: */
+ul.nav.flow li,
+ul.nav.flow li span,
+ul.nav.flow li span a { display:block; height:23px;  }
+
+/* Hide the last pipe: */
+ul.nav.flow li.nav_how span { background-image:none; }
+
+/* Generated from NavStyle.css.aspx: */
+ul.nav.flow li.nav_about        {   width:200px;  background-position:4px 2px;   }
+ul.nav.flow li.nav_gallery      {   width:126px;  background-position:4px 3px;   }
+ul.nav.flow li.nav_courses      {   width: 76px;  background-position:4px 5px;   }
+ul.nav.flow li.nav_events       {   width: 63px;  background-position:4px 2px;   }
+ul.nav.flow li.nav_thinktank    {   width:106px;  background-position:4px 3px;   }
+ul.nav.flow li.nav_who          {   width:122px;  background-position:4px 0px;   }
+ul.nav.flow li.nav_contact      {   width:102px;  background-position:4px 4px;   }
+ul.nav.flow li.nav_how          {   width:126px;  background-position:4px 1px;   }
+
+.nav_about        {   background-image:url('../images/nav/about.gif')       !important;  }
+.nav_gallery      {   background-image:url('../images/nav/gallery.gif')     !important;  }
+.nav_courses      {   background-image:url('../images/nav/courses.gif')     !important;  }
+.nav_events       {   background-image:url('../images/nav/events.gif')      !important;  }
+.nav_thinktank    {   background-image:url('../images/nav/thinktank.gif')   !important;  }
+.nav_who          {   background-image:url('../images/nav/whoarewe.gif')    !important;  }
+.nav_contact      {   background-image:url('../images/nav/contact.gif')     !important;  }
+.nav_how          {   background-image:url('../images/nav/howtofindus.gif') !important;  }
+
+
+/*****************************/
+/*      Social Media:        */
+/*****************************/
+
+div.socialMedia { float:left; width:400px; }
+
+.socialMedia a  
+{
+    display:block; 
+    float:left; 
+    width:42px; 
+    height:42px; 
+    background:url('../images/logos/SocialSprite.jpg') no-repeat;
+    text-indent:-10000px; 
+    margin:2px;
+}
+
+.socialMedia a.linkedIn { background-position:1px -42px; }
+.socialMedia a.facebook { background-position:-46px -42px; }
+.socialMedia a.twitter { background-position:-91px -42px; }
+.socialMedia a.wordpress { background-position:-138px -42px; }
+.socialMedia a.youtube { background-position:-181px -42px; }
+
+.socialMedia a.linkedIn:hover { background-position:1px 2px; }
+.socialMedia a.facebook:hover { background-position:-46px 2px; }
+.socialMedia a.twitter:hover { background-position:-91px 2px; }
+.socialMedia a.wordpress:hover { background-position:-138px 2px; }
+.socialMedia a.youtube:hover { background-position:-181px 1px; }
+

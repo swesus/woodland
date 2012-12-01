@@ -1,0 +1,94 @@
+<%@ Control Language="c#" %>
+<% @Import Namespace="System.Net.Mail" %>
+
+<script runat="server">
+
+
+
+protected void Button_Click(Object s, EventArgs e)
+{
+	string sBody = string.Format(@"
+
+A message has been left on woodlandlife.co.uk.
+
+From: {0}
+Email: {1}
+Add to mailing list?: {2}
+
+Message:
+
+{3}",
+	oName.Text,
+	oEmailAddress.Text,
+	oMailingList.SelectedValue,
+	oMessage.Text);
+
+
+	SendEmail(
+	    "no_reply@woodlandlife.co.uk",
+	    "michaelsingleton@hotmail.co.uk",
+		"Contact Us Message",
+		sBody,
+		"relay-hosting.secureserver.net"
+	);
+
+
+	oSuccessMessage.Visible = true;
+}
+
+
+
+
+protected void SendEmail(string sFrom, string sTo, string sSubject, string sBody, string sServer)
+{
+	MailMessage oMessage = new MailMessage(sFrom, sTo, sSubject, sBody);
+
+	SmtpClient oClient = new SmtpClient(sServer);
+
+	// Add credentials if the SMTP server requires them.
+	oClient.Credentials = System.Net.CredentialCache.DefaultNetworkCredentials;
+
+	oClient.Send(oMessage);
+}
+
+</script>
+
+
+
+<form runat="server" ID="aspnetForm" CssClass="wrapper">
+
+	<p>If you would like more information send us your e-mail address and query and we will get back to you as soon as possible:</p>
+
+	<label for="form_name">
+		<span>Name:</span>
+		<asp:TextBox runat="server" ID="oName" />
+	</label>
+
+	<label for="form_email_to">
+		<span>E-Mail:</span>
+		<asp:TextBox runat="server" ID="oEmailAddress" />
+	</label>
+
+	<label for="form_message">
+		<span>Your message:</span>
+		<asp:TextBox runat="server" ID="oMessage" cols="40" rows="20" TextMode="multiline" />
+	</label>
+
+	<p>Would you like us to put you on our mailing list to recieve updates on courses and products?</p>
+
+	<asp:RadioButtonList runat="server" ID="oMailingList" >
+	   <asp:ListItem>Yes</asp:ListItem>
+	   <asp:ListItem selected="true">No</asp:ListItem>
+	</asp:RadioButtonList>
+
+	<asp:Button runat="server" ID="oSubmit" Text="Send Message" CssClass="submit" OnClick="Button_Click" />
+
+	<asp:Literal runat="server" ID="oSuccessMessage" visible="false">
+		<p style="color:red;"><strong>Message sent</strong></p>
+	</asp:Literal>
+
+</form>
+
+
+
+

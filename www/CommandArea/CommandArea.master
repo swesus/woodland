@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CommandArea.master.cs" Inherits="CommandArea_CommandArea" %>
+<% JuggleDrumManager.Login.TurnOffCache(); %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Command Area</title>
+    <link rel="stylesheet" type="text/css" href="~/Style/canvas.css" />
+    <link rel="stylesheet" type="text/css" href="~/CommandArea/CommandArea.css" />
+
+
+    <asp:ContentPlaceHolder id="head_content" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div style="float:right; width:200px; text-align:right;">
+            <asp:HyperLink runat="server" NavigateUrl="~/Login.aspx" Text="Log Out" />
+        </div>
+
+        <p>
+            <a href="menu.aspx" runat="server" id="oMenuLink">Back to menu</a>
+            <asp:ContentPlaceHolder id="navigation_content" runat="server">
+            </asp:ContentPlaceHolder>
+        </p>
+        
+        <asp:ContentPlaceHolder id="body_content" runat="server">
+        </asp:ContentPlaceHolder>
+        
+    </form>
+</body>
+</html>
