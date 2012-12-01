@@ -12,7 +12,7 @@
 	    <WL:Navigation runat="server" CssClass="flow" />
 		<div class="cb"><!-- --></div>
         <a id="ExeterForestSchool_logo">
-		    <img src="images/logos/Exeter_Forest_School_Logo.jpg" alt="Exeter Forest School" />
+		    <img src="images/logos/Exeter_Forest_School_Logo.png" alt="Exeter Forest School" />
         </a>
         <div id="forum-advert-wrapper">
             <a id="forum-advert" href="discussion/">
