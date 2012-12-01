@@ -19,24 +19,31 @@
 		<p>info@woodlandlife.co.<!-- no spam -->uk</p>
 
         <p>
-            Woodland Life<br />
-            Moyses Lane<br />
-            Okehampton<br />
-            EX20 1JT
+			72 High St<br />
+			Halberton<br />
+			Devon<br />
+			EX16 7AG
         </p>
 
 		<h6>Tom Lowday:</h6>
 		<p>
-			+44 7773 545136
+			07773 545136
 			<br />
 			Tom_Lowday@woodlandlife.co.<!-- no spam -->uk
 		</p>
 
 		<h6>Shevek Pring:</h6>
 		<p>
-			+44 7863 339715
+			07863 339715
 			<br />
 			Shevek_Pring@woodlandlife.co.<!-- no spam -->uk
+		</p>
+
+		<h6>Chris White:</h6>
+		<p>
+			07878 642169
+			<br />
+			info@exeterforestschool.co.<!-- no spam -->uk
 		</p>
 	</div>
 

@@ -11,7 +11,7 @@
 	<div id="home_banner">
 	    <WL:Navigation runat="server" CssClass="flow" />
 		<div class="cb"><!-- --></div>
-        <a id="ExeterForestSchool_logo">
+        <a id="ExeterForestSchool_logo" href="http://www.exeterforestschool.co.uk/">
 		    <img src="images/logos/Exeter_Forest_School_Logo.png" alt="Exeter Forest School" />
         </a>
         <div id="forum-advert-wrapper">

@@ -8,6 +8,9 @@ h1, h2, h3, h4, h5, h6 {
 	font-family:"Century Gothic", serif, Arial;
 }
 
+.left { display: block; clear:none; float: left; }
+.right { display: block; clear:none; float: right; }
+
 div.box h1,
 div.box h2,
 div.box h3,
@@ -98,7 +101,7 @@ input.text.focused, textarea.focused, input.text:hover, textarea:hover { border-
 #default_aspx a#forum-advert { color:rgb(105,142,43); text-decoration:none; text-align:center; font-weight:bold; padding-bottom:20px; }
 #default_aspx a#forum-advert span { color:rgb(55,77,90); }
 #default_aspx a#forum-advert img { display:block; width:100px; margin:0 auto; }
-#default_aspx a#ExeterForestSchool_logo { float: left; }
+#default_aspx a#ExeterForestSchool_logo { float: left; padding-left:5px; }
 
 
 /* twitter-panel */
