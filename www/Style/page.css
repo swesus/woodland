@@ -194,9 +194,6 @@ ul.SimpleGallery span { display:block; clear:both; }
 	font-family:"courier new";
 	color:black;
 }
-#courses_aspx .pdf li a:hover{
-	background-position:-60px top;
-}
 #courses_aspx .pdf ul {
 	width:800px;
 	margin:16px auto;
@@ -206,6 +203,26 @@ ul.SimpleGallery span { display:block; clear:both; }
 	text-align:center;
 	margin: 0 20px 10px 20px;
 }
+
+/* If the brouser supports it then use CSS to twist the pdf icon smoothy. */
+.no-cssanimations #courses_aspx .pdf li a:hover{
+	background-position:-60px top;
+}
+.cssanimations #courses_aspx .pdf li a{
+	-webkit-transition: 0.3s ease-out -webkit-transform;
+	-moz-transition:    0.3s ease-out -moz-transform;
+	-ms-transition:     0.3s ease-out -ms-transform;  
+	-o-transition:      0.3s ease-out -o-transform;    
+	transition:         0.3s ease-out transform;
+}
+.cssanimations #courses_aspx .pdf li a:hover{
+	-webkit-transform: rotate(14deg);
+	-moz-transform:    rotate(14deg);
+	-ms-transform:     rotate(14deg);
+	-o-transform:      rotate(14deg);
+	transform:         rotate(14deg);
+}
+
 
 /* CourseList */
 #courses_aspx div.CourseList div.list {
