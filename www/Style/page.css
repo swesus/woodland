@@ -5,7 +5,8 @@
 h1, h2, h3, h4, h5, h6 {
 	color:#18612A;
 	font-variant: small-caps;
-	font-family:"Century Gothic", serif, Arial;
+	font-family:'JournalRegular', "Century Gothic", serif, Arial;
+    font-size:1.6em;
 }
 
 .left { display: block; clear:none; float: left; }
@@ -79,7 +80,6 @@ input.text.focused, textarea.focused, input.text:hover, textarea:hover { border-
 }
 #default_aspx #home_banner h2{
 	margin:0;
-	font-size:16px;
 }
 #default_aspx #home_banner a:hover{
 	background:none !important;
@@ -252,7 +252,7 @@ ul.SimpleGallery span { display:block; clear:both; }
 #contact_us_aspx .radio input { padding:0px 3px 0px 20px; background-color:transparent; } 
 #contact_us_aspx .radio label { margin:0px 20px 0px 3px; background-color:transparent; } 
 #contact_us_aspx textarea{ width:90%; height:260px; } 
-#contact_us_aspx h6{ font-size:1em; margin-bottom:0; }
+#contact_us_aspx h6{ margin-bottom:0; }
 #contact_us_aspx input.submit{ display:block; margin:0 auto; width:150px; }
 
 
@@ -278,7 +278,6 @@ ul.SimpleGallery span { display:block; clear:both; }
 {
     margin:0 20px;
     padding:0;
-    font-size:20px;
     background:white;
     color:#18612a;
     font-weight:bold;

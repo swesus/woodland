@@ -15,7 +15,7 @@
 
 	    <div id="banner">
 		    <a href="/"><img src="~/images/logos/logo.gif" alt="Woodland Life" runat="server" /></a>
-		    <h2><span>The Business of Bushcraft Survival, Traditional Woodland Crafts and Sustainably Living Off The Land</span></h2>
+		    <h2><span>The Business of Bushcraft Survival,<br />Traditional Woodland Crafts and Sustainably Living Off The Land</span></h2>
 	    </div><!-- banner -->
 
 	    <WL:Navigation runat="server" CssClass="flow" />
