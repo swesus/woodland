@@ -1,7 +1,6 @@
 
 
 $(document).ready(function () {
-    core.initJS();
     core.initHomePage();
     core.initMissionPage();
     core.initFormFocus();
@@ -9,10 +8,6 @@ $(document).ready(function () {
 });
 
 var core = {
-
-    initJS: function () {
-        $("body").removeClass("no-js").addClass("js");
-    },
 
     initHomePage: function () {
 
